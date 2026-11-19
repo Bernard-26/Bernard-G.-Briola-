@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bernard G. Briola – BSIT student looking for OJT</title>
 <meta name="description" content="3rd-year BSIT student with two deployed full-stack projects, looking for an OJT placement in web or software development.">
@@ -35,6 +37,7 @@
 <main>
   <header class="hero">
     <h1>I build web systems, and I’m looking for an OJT.</h1>
+    <p class="typed-line"><span class="sr-only">I build online stores, admin dashboards, ordering systems, back-end APIs and rider dispatch maps.</span><span aria-hidden="true">I build <span id="typed"></span><span class="caret"></span></span></p>
     <p>I’ve built and deployed two full-stack systems as school projects: an online gadget store and an ordering system for a water refilling station. I want to spend my OJT working on real features with a team that gives honest feedback.</p>
     <div class="cta">
       <a class="btn" href="#contact">Contact me</a>
@@ -47,21 +50,21 @@
     <p class="lead">Both began as school requirements and now run online. Open them and try the ordering flow. They run on a free host, so the first load can take about a minute.</p>
 
     <article class="proj">
-      <div class="shot"><b>MOSSTECH</b><img src="img/mosstech.png" alt="MOSSTECH storefront" loading="lazy" onerror="this.remove()"></div>
+      <div class="shot"><b>MOSSTECH</b><img src="img/mosstech.png" alt="MOSSTECH storefront" loading="lazy"></div>
       <div>
         <h3>MOSSTECH</h3>
         <p>A tech-gadget store. Customers sign up, browse products, fill a cart and check out. The admin dashboard lets the owner manage orders.</p>
-        <a class="live" href="https://mosstech.onrender.com" target="_blank" rel="noopener">Open mosstech.onrender.com</a>
+        <a class="live" href="https://mosstech.onrender.com" target="_blank" rel="noopener noreferrer">Open mosstech.onrender.com</a>
         <p class="stack">Node.js, Express, SQLite, HTML/CSS/JS</p>
       </div>
     </article>
 
     <article class="proj">
-      <div class="shot"><b>AquaMega</b><img src="img/aquamega.png" alt="AquaMega ordering system" loading="lazy" onerror="this.remove()"></div>
+      <div class="shot"><b>AquaMega</b><img src="img/aquamega.png" alt="AquaMega ordering system" loading="lazy"></div>
       <div>
         <h3>AquaMega</h3>
         <p>An ordering system for a water refilling station. Customers place orders, the owner dispatches riders on a map, and staff track container loans and billing.</p>
-        <a class="live" href="https://aquamega-lv9g.onrender.com" target="_blank" rel="noopener">Open aquamega-lv9g.onrender.com</a>
+        <a class="live" href="https://aquamega-lv9g.onrender.com" target="_blank" rel="noopener noreferrer">Open aquamega-lv9g.onrender.com</a>
         <p class="stack">Node.js, SQLite, OpenStreetMap, admin dashboard</p>
       </div>
     </article>
@@ -81,7 +84,7 @@
 
   <section id="about">
     <h2>About</h2>
-    <div class="about" style="margin-top:24px">
+    <div class="about">
       <div>
         <p>I’m a 3rd-year BSIT student and I have been programming since Grade 11. I learn by shipping: both projects above started as school work and are now deployed.</p>
         <p>I want an OJT where I can work on real systems, take feedback and grow as a developer.</p>
@@ -98,9 +101,9 @@
     <h2>Find me online</h2>
     <p class="lead">Follow my work or send me a message on any of these. For OJT inquiries, email works best.</p>
     <div class="social">
-      <a href="https://www.instagram.com/thisisnotbernard/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/bernardbriola26" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.tiktok.com/@hahahabernardi2" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
     </div>
     <p class="mail">Email: <a href="mailto:Bernardbriola0826@gmail.com">Bernardbriola0826@gmail.com</a></p>
   </section>
