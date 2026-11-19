@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bernard G. Briola – BSIT student looking for OJT</title>
+<meta name="description" content="3rd-year BSIT student with two deployed full-stack projects, looking for an OJT placement in web or software development.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%232A44D4%22/><text x=%2232%22 y=%2245%22 font-size=%2236%22 font-family=%22Georgia,serif%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22white%22>B</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg3d" aria-hidden="true"></canvas>
+<div class="layout">
+
+<aside class="side">
+  <div>
+    <div class="name">Bernard G. Briola</div>
+    <p class="role">3rd-year BSIT student, Manila</p>
+  </div>
+  <nav aria-label="Sections">
+    <a href="#work">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="meta">
+    <a href="mailto:Bernardbriola0826@gmail.com">Bernardbriola0826@gmail.com</a><br>
+    <span id="clock">Manila, Philippines</span>
+  </div>
+</aside>
+
+<main>
+  <header class="hero">
+    <h1>I build web systems, and I’m looking for an OJT.</h1>
+    <p>I’ve built and deployed two full-stack systems as school projects: an online gadget store and an ordering system for a water refilling station. I want to spend my OJT working on real features with a team that gives honest feedback.</p>
+    <div class="cta">
+      <a class="btn" href="#contact">Contact me</a>
+      <a class="alt" href="#work">See the live projects</a>
+    </div>
+  </header>
+
+  <section id="work">
+    <h2>Projects</h2>
+    <p class="lead">Both began as school requirements and now run online. Open them and try the ordering flow. They run on a free host, so the first load can take about a minute.</p>
+
+    <article class="proj">
+      <div class="shot"><b>MOSSTECH</b><img src="img/mosstech.png" alt="MOSSTECH storefront" loading="lazy" onerror="this.remove()"></div>
+      <div>
+        <h3>MOSSTECH</h3>
+        <p>A tech-gadget store. Customers sign up, browse products, fill a cart and check out. The admin dashboard lets the owner manage orders.</p>
+        <a class="live" href="https://mosstech.onrender.com" target="_blank" rel="noopener">Open mosstech.onrender.com</a>
+        <p class="stack">Node.js, Express, SQLite, HTML/CSS/JS</p>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="shot"><b>AquaMega</b><img src="img/aquamega.png" alt="AquaMega ordering system" loading="lazy" onerror="this.remove()"></div>
+      <div>
+        <h3>AquaMega</h3>
+        <p>An ordering system for a water refilling station. Customers place orders, the owner dispatches riders on a map, and staff track container loans and billing.</p>
+        <a class="live" href="https://aquamega-lv9g.onrender.com" target="_blank" rel="noopener">Open aquamega-lv9g.onrender.com</a>
+        <p class="stack">Node.js, SQLite, OpenStreetMap, admin dashboard</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>What I can do in an OJT</h2>
+    <p class="lead">Skills I have already used in my projects.</p>
+    <dl class="skills">
+      <dt>Build web pages</dt><dd>HTML, CSS, JavaScript</dd>
+      <dt>Build back-end APIs</dt><dd>Node.js, Express</dd>
+      <dt>Work with databases</dt><dd>SQLite</dd>
+      <dt>Deploy and version code</dt><dd>GitHub, Render</dd>
+    </dl>
+    <p class="note">I learn quickly, write clear documentation and ask questions early.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about" style="margin-top:24px">
+      <div>
+        <p>I’m a 3rd-year BSIT student and I have been programming since Grade 11. I learn by shipping: both projects above started as school work and are now deployed.</p>
+        <p>I want an OJT where I can work on real systems, take feedback and grow as a developer.</p>
+      </div>
+      <ul class="facts">
+        <li><span>Languages</span>English and Tagalog</li>
+        <li><span>Looking for</span>OJT in web or software development</li>
+        <li><span>Strengths</span>Full-stack builds, deployment, clear communication</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Find me online</h2>
+    <p class="lead">Follow my work or send me a message on any of these. For OJT inquiries, email works best.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p class="mail">Email: <a href="mailto:Bernardbriola0826@gmail.com">Bernardbriola0826@gmail.com</a></p>
+  </section>
+
+  <footer>Bernard G. Briola · Bernardbriola0826@gmail.com</footer>
+</main>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/background.js"></script>
+</body>
+</html>
