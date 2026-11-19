@@ -61,7 +61,7 @@
   }
 
   // if a screenshot is missing, drop it and keep the plain frame
-  document.querySelectorAll(".shot img").forEach(function(img){
+  document.querySelectorAll(".shot img,.avatar img").forEach(function(img){
     var gone=function(){img.remove()};
     if(img.complete&&img.naturalWidth===0)gone();else img.addEventListener("error",gone);
   });

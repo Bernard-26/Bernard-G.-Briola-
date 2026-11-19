@@ -98,3 +98,14 @@ footer{padding:28px 0 56px;color:var(--mute);font-size:14.5px;border-top:1px sol
   .skills{grid-template-columns:1fr}
   .skills dt{border-bottom:0;padding-bottom:0}
 }
+
+/* profile photo: slow rotating ring, gentle float */
+.avatar{position:relative;width:116px;height:116px;border-radius:50%;animation:float 5.5s ease-in-out infinite}
+.avatar::before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(var(--accent),color-mix(in srgb,var(--accent) 12%,transparent),var(--accent));animation:spin 7s linear infinite}
+.avatar .pic{position:absolute;inset:5px;border-radius:50%;overflow:hidden;background:var(--card);display:grid;place-items:center;border:3px solid var(--bg)}
+.avatar .pic span{font:800 34px "Schibsted Grotesk",sans-serif;letter-spacing:-.02em;color:var(--accent)}
+.avatar .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.avatar:hover .pic img{transform:scale(1.08)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{50%{transform:translateY(-6px)}}
+@media (max-width:900px){.avatar{width:92px;height:92px}.avatar .pic span{font-size:28px}}
